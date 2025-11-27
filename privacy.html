@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy & Affiliate Disclaimer | UG Trendsetters</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            black: '#1A1A1A',
+                            gold: '#D4AF37',
+                            light: '#F5F5F5'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-luxury-black text-luxury-light font-montserrat">
+    <!-- Navigation -->
+    <nav class="bg-black/90 backdrop-blur-md sticky top-0 z-50 border-b border-luxury-gold/20">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i data-feather="watch" class="text-luxury-gold"></i>
+                <span class="text-xl font-playfair font-bold text-luxury-gold">UG Trendsetters</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-luxury-gold transition">Home</a>
+                <a href="watches.html" class="hover:text-luxury-gold transition">Watches</a>
+                <a href="perfumes.html" class="hover:text-luxury-gold transition">Perfumes</a>
+                <a href="tips.html" class="hover:text-luxury-gold transition">Tips</a>
+                <a href="contact.html" class="hover:text-luxury-gold transition">Contact</a>
+            </div>
+            <button class="md:hidden" id="mobile-menu-button">
+                <i data-feather="menu" class="text-luxury-gold"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Privacy Hero -->
+    <section class="relative py-32 flex items-center justify-center bg-[url('http://static.photos/luxury/1200x630/4')] bg-cover bg-center">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="container mx-auto px-4 z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-playfair font-bold text-luxury-gold mb-4">Privacy & Affiliate Disclaimer</h1>
+        </div>
+    </section>
+
+    <!-- Privacy Content -->
+    <section class="py-16 bg-luxury-black">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="prose prose-invert">
+                <h2 class="text-2xl font-playfair font-bold text-luxury-gold mb-4">Privacy Policy</h2>
+                <p class="mb-6">UG Trendsetters is committed to protecting your privacy. This policy explains how we collect, use, and safeguard your personal information.</p>
+
+                <h3 class="text-xl font-playfair font-semibold text-luxury-gold mb-2 mt-6">Information Collection</h3>
+                <p class="mb-4">We collect information when you:</p>
+                <ul class="list-disc pl-6 mb-6">
+                    <li>Visit our website</li>
+                    <li>Register on our site</li>
+                    <li>Place an order</li>
+                    <li>Subscribe to our newsletter</li>
+                    <li>Fill out a form</li>
+                </ul>
+
+                <h3 class="text-xl font-playfair font-semibold text-luxury-gold mb-2 mt-6">Use of Information</h3>
+                <p class="mb-6">The information we collect may be used to:</p>
+                <ul class="list-disc pl-6 mb-6">
+                    <li>Personalize your experience</li>
+                    <li>Improve our website</li>
+                    <li>Process transactions</li>
+                    <li>Send periodic emails</li>
+                </ul>
+
+                <h2 class="text-2xl font-playfair font-bold text-luxury-gold mb-4 mt-10">Affiliate Disclosure</h2>
+                <p class="mb-6">UG Trendsetters participates in various affiliate marketing programs, which means we may earn commissions on purchases made through our links to retailer sites. This comes at no additional cost to you.</p>
+
+                <h3 class="text-xl font-playfair font-semibold text-luxury-gold mb-2 mt-6">Product Recommendations</h3>
+                <p class="mb-6">We only recommend products we believe in and that offer value to our customers. Our opinions are our own and not influenced by affiliate partnerships.</p>
+
+                <h3 class="text-xl font-playfair font-semibold text-luxury-gold mb-2 mt-6">Transparency</h3>
+                <p class="mb-6">All affiliate links are clearly marked. We strive to provide honest and unbiased reviews and recommendations.</p>
+
+                <p class="text-sm text-luxury-light/60 mt-10">Last updated: June 2023</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>

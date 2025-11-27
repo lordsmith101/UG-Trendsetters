@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Tips & Guides | UG Trendsetters</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            black: '#1A1A1A',
+                            gold: '#D4AF37',
+                            light: '#F5F5F5'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-luxury-black text-luxury-light font-montserrat">
+    <!-- Navigation -->
+    <nav class="bg-black/90 backdrop-blur-md sticky top-0 z-50 border-b border-luxury-gold/20">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i data-feather="watch" class="text-luxury-gold"></i>
+                <span class="text-xl font-playfair font-bold text-luxury-gold">UG Trendsetters</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-luxury-gold transition">Home</a>
+                <a href="watches.html" class="hover:text-luxury-gold transition">Watches</a>
+                <a href="perfumes.html" class="hover:text-luxury-gold transition">Perfumes</a>
+                <a href="tips.html" class="text-luxury-gold">Tips</a>
+                <a href="contact.html" class="hover:text-luxury-gold transition">Contact</a>
+            </div>
+            <button class="md:hidden" id="mobile-menu-button">
+                <i data-feather="menu" class="text-luxury-gold"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Tips Hero -->
+    <section class="relative py-32 flex items-center justify-center bg-[url('http://static.photos/luxury/1200x630/2')] bg-cover bg-center">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="container mx-auto px-4 z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-playfair font-bold text-luxury-gold mb-4">Luxury Guides & Tips</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Expert advice on luxury watches, perfumes, and lifestyle</p>
+        </div>
+    </section>
+
+    <!-- Articles -->
+    <section class="py-16 bg-gradient-to-b from-luxury-black to-luxury-black/90">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <div class="bg-luxury-black/50 backdrop-blur-sm rounded-xl overflow-hidden border border-luxury-gold/20 hover:border-luxury-gold/50 transition-all hover:scale-[1.02]">
+                    <img src="http://static.photos/watches/640x360/4" alt="Watch Care" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-playfair font-semibold text-luxury-gold mb-2">How to Care for Your Luxury Watch</h3>
+                        <p class="text-luxury-light/80 mb-4">Learn the best practices to maintain your timepiece's value and longevity.</p>
+                        <a href="#" class="text-luxury-gold hover:underline">Read More →</a>
+                    </div>
+                </div>
+                
+                <!-- Article 2 -->
+                <div class="bg-luxury-black/50 backdrop-blur-sm rounded-xl overflow-hidden border border-luxury-gold/20 hover:border-luxury-gold/50 transition-all hover:scale-[1.02]">
+                    <img src="http://static.photos/perfume/640x360/4" alt="Perfume Guide" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-playfair font-semibold text-luxury-gold mb-2">Choosing the Right Fragrance for Every Occasion</h3>
+                        <p class="text-luxury-light/80 mb-4">Our guide to selecting the perfect scent for work, dates, and special events.</p>
+                        <a href="#" class="text-luxury-gold hover:underline">Read More →</a>
+                    </div>
+                </div>
+                
+                <!-- Article 3 -->
+                <div class="bg-luxury-black/50 backdrop-blur-sm rounded-xl overflow-hidden border border-luxury-gold/20 hover:border-luxury-gold/50 transition-all hover:scale-[1.02]">
+                    <img src="http://static.photos/luxury/640x360/3" alt="Authentication" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-playfair font-semibold text-luxury-gold mb-2">Spotting Fake Luxury Goods in Uganda</h3>
+                        <p class="text-luxury-light/80 mb-4">Key indicators to help you identify counterfeit watches and perfumes.</p>
+                        <a href="#" class="text-luxury-gold hover:underline">Read More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
